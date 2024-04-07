@@ -1,0 +1,152 @@
+.icon-before::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-after::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+    color: var(--boja1);
+}
+
+body {
+    background-color: var(--boja3);
+    --boja1: #69BB39;
+    --boja2: #498446;
+    --boja3: #101119;
+    --boja4: #FFFFFF;
+
+    margin: 0.1px;
+    overflow-x: hidden;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 2em;
+}
+.header a{
+    color:var(--boja1);
+    font-size: 1.2em;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    justify-content:space-evenly;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--boja3);
+}
+.jedan{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.dva{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.btn{
+    background-color: var(--boja3);
+    color: var(--boja1);
+    outline: 1px solid var(--boja1);
+    padding: 0.5em 1em;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: var(--boja1);
+    color: var(--boja3);
+    cursor: pointer;
+}
+.hero{
+    /* background-color: red; */
+    padding-top: 10em;   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.miniHero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heroTextDiv{
+    width: 500px;
+}
+.heroSlika{
+    width: 400px;
+    height: 200px;
+}
+.heroNaslov{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.grid{
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 1em;
+    margin: auto;
+}
+.gridImage{
+    width: 200px;
+    height: 100px;
+}
+.gridText{
+    font-size: 20px;
+}
+
+.hero2{
+    display: flex;
+    width: 100vw;
+    background-color: rgb(255, 230, 203);
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.hero2SlikaDiv{
+    margin-right: 2em;
+}
+.hero2Slika{
+    width: 250px;
+    height: 350px;
+}
+
+.hero3{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.footer{
+    background-color: rgb(255, 230, 203);
+    height: 400px;
+}
+
