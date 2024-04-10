@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Konga Pro';
+    src: url('KongaPro.eot');
+    src: local('Konga Pro'), local('KongaPro'),
+        url('KongaPro.eot?#iefix') format('embedded-opentype'),
+        url('KongaPro.woff2') format('woff2'),
+        url('KongaPro.woff') format('woff'),
+        url('KongaPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'tenon';
+    src: url(./Font/Fontspring-DEMO-tenon-medium-2.otf);
+}
+@font-face {
+    font-family: konga;
+    src: url(./Font/KongaPro.ttf);
+}
+@font-face {
+    font-family: naslov;
+    src: url(./Font/Korolev-Bold.ttf);
+}
+
 .icon-before::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -27,28 +40,33 @@
     text-decoration: none;
     color: black;
     transition-duration: 0.5s;
-    color: var(--boja1);
+    color: var(--boja4);
+    font-family: naslov;
 }
 
 body {
     background-color: var(--boja3);
     --boja1: #69BB39;
     --boja2: #498446;
-    --boja3: #101119;
+    --boja3: #498446;
     --boja4: #FFFFFF;
+    --boja5:#ff8c00;
 
     margin: 0.1px;
     overflow-x: hidden;
 }
 .logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 2em;
+    width: 130px;
+    height: 35px;
+    margin-right: 1em;
 }
 .header a{
-    color:var(--boja1);
+    color:var(--boja4);
     font-size: 1.2em;
+}
+.header .jedan a{
+    font-family: tenon;
+    font-weight: bolder;
 }
 .header{
     display: flex;
@@ -58,6 +76,8 @@ body {
     position: fixed;
     width: 100vw;
     background-color: var(--boja3);
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.5);
+    z-index: 100;
 }
 .jedan{
     display: flex;
@@ -70,20 +90,24 @@ body {
     gap: 1em;
 }
 .btn{
-    background-color: var(--boja3);
-    color: var(--boja1);
+    background-color: var(--boja1);
+    color: var(--boja2);
     outline: 1px solid var(--boja1);
     padding: 0.5em 1em;
     border-radius: 30px;
+    box-shadow: 0px 3px 10px var(--boja1);
 }
 .btn:hover{
-    background-color: var(--boja1);
+    background-color: var(--boja4);
+    outline: 1px solid var(--boja4);
+    box-shadow: 0px 3px 10px var(--boja4);
     color: var(--boja3);
     cursor: pointer;
 }
 .hero{
     /* background-color: red; */
     padding-top: 10em;   
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -96,26 +120,32 @@ body {
 }
 .heroTextDiv{
     width: 500px;
+    margin-right: 4em;
 }
 .heroSlika{
-    width: 400px;
-    height: 200px;
+    height: 400px;
 }
 .heroNaslov{
     margin-top: 3em;
     margin-bottom: 3em;
+    font-size: 30px;
 }
 .grid{
     
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 100px 100px;
     gap: 1em;
     margin: auto;
 }
+
 .gridImage{
-    width: 200px;
-    height: 100px;
+    transform: scale(500%);
+    text-shadow: 0px 1px 0.2px rgba(0, 0, 0, 0.216);
+}
+
+.gridImage1{
+    transform: scale(140%);
 }
 .gridText{
     font-size: 20px;
@@ -128,12 +158,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2em;
+    margin-top: 5em;
 }
 .hero2SlikaDiv{
     margin-right: 2em;
+    
 }
 .hero2Slika{
-    width: 250px;
+    width: 400px;
     height: 350px;
 }
 
@@ -144,9 +176,80 @@ body {
     align-items: center;
     padding: 2em;
 }
+.hero2 div p{
+    color: var(--boja2) ;
+}
 
 .footer{
     background-color: rgb(255, 230, 203);
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
 
+.heroText1{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 1em;
+    font-family: naslov;
+    line-height: 0.85em;
+}
+.obojenaRec{
+    color: rgb(255, 140, 0);
+    font-family: konga;
+}
+.obojenaRecHero{
+    color: rgb(255, 140, 0);
+    font-family: konga;
+    font-size: 40px;
+}
+.heroText2{
+    padding-bottom: 3em;
+}
+.miniNaslov{
+    font-size: 40px;
+}
+.miniText{
+    font-size: 20px;
+    width: 400px;
+}
+.hero22{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prvi{
+    margin-top: 2em;
+}
+.btnP{
+    margin-top: 2em;
+}
+.hero3L{
+    margin-right: 2em;
+}
+
+.footerJedan a{
+    color: var(--boja3);
+    font-size: 30px;
+    text-decoration: underline;
+    
+}
+.footerJedan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
+    gap: 2em;
+}
+.footerDva{
+    height: 100px;
+}
+.lt{
+    color: var(--boja3);
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.mt{
+    margin-top: 5em;
+}
