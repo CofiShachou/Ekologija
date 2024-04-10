@@ -1,0 +1,4 @@
+Telefon: 319px - 480px
+Ipad: 481px - 1200px
+Laptop: 1201px - 1600px
+PC: 1601px - ...
