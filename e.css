@@ -322,8 +322,9 @@ body {
         align-items: center;
         padding: 2em 0em;
     }
-    .hero3 .hero2Slika{
+    .hero2Slika{
         width: 15em;
+        height: 10em;
     }
     .hero3 .hero2SlikaDiv{
         margin-right: 0em;
