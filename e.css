@@ -260,10 +260,7 @@ body {
     color: var(--boja3);
     font-size: 30px;
     letter-spacing: 5px;
-}
-.mt{
-    /* margin-top: 2em; */
-}
+
 
 .grid2{
     display: none;
